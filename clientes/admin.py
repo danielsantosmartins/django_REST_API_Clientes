@@ -6,5 +6,6 @@ class Clientes(admin.ModelAdmin):
     list_display_links = ('id', 'nome', 'cpf' )
     search_fields = ('id', 'nome', 'cpf' )
     list_per_page = 20
+    ordering = ['id','nome']
 
 admin.site.register(Cliente, Clientes)
